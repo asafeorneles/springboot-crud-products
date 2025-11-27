@@ -76,13 +76,4 @@ public class ProductController {
         productRepository.delete(optionalProductModel.get());
         return ResponseEntity.status(HttpStatus.OK).body("Product deleted successfully"); // Como o objeto é deletado, ele não é retornado. Portanto, o productRepository.delete(optionalProductModel.get()) é separado
     }
-
-    // Tratando os erros manualmente
-//    try {
-//        ProductModel saved = productRepository.save(productModel);
-//        return ResponseEntity.status(HttpStatus.CREATED).body(saved);
-//    } catch (Exception e) {
-//        return ResponseEntity.status(HttpStatus.BAD_REQUEST)
-//                .body("Erro ao salvar produto: " + e.getMessage());
-//    }
 }
