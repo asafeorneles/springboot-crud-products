@@ -56,19 +56,6 @@ docker-compose up -d
 
 ---
 
-## 🔗 Conexão com o Banco de Dados
-
-Configuração usada no `application.properties`:
-
-```
-spring.datasource.url=jdbc:mysql://localhost:3306/products-api
-spring.datasource.username=root
-spring.datasource.password=root
-spring.jpa.hibernate.ddl-auto=update
-```
-
----
-
 ## 📮 Endpoints Principais (CRUD)
 
 ### Criar
