@@ -4,7 +4,7 @@ services:
     container_name: mysql_spring
     environment:
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: products-api
+      MYSQL_DATABASE: products_api
     ports:
       - "3306:3306"
     volumes:
